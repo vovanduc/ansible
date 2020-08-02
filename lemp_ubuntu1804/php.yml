@@ -25,3 +25,4 @@
         - php7.3-intl
         - php7.3-json
       state: present
+      autoclean: yes
