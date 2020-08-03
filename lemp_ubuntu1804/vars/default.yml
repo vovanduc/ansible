@@ -2,3 +2,5 @@ mysql_root_password: "root"
 http_host: "billing"
 http_conf: "billing.conf"
 http_port: "80"
+
+phpfpm_version: "7.3"
