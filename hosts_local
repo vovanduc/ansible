@@ -1,0 +1,7 @@
+[webservers]
+vm1 ansible_host=172.17.0.3
+vm2 ansible_host=172.17.0.4
+vm3 ansible_host=172.17.0.5
+
+[dbservers]
+db1 ansible_host=172.17.0.3
