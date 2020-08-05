@@ -1,4 +1,6 @@
-mysql_root_password: "root"
+mysql_root_password: "Fm2pzEaDrGEzl4loGUt2kcb61"
+mysql_billing_password: "e683GPUO0mogBjgjdgOoRZewC"
+
 http_host: "billing"
 http_conf: "billing.conf"
 http_port: "80"
