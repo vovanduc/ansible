@@ -1,10 +1,7 @@
-#[billing]
-#bill1 ansible_host=192.168.11.111
-#bill2 ansible_host=192.168.11.112
-#bill3 ansible_host=192.168.11.113
-#bill4 ansible_host=192.168.11.114
-
 [webservers]
-vm1 ansible_host=172.17.0.3
-vm2 ansible_host=172.17.0.4
-vm3 ansible_host=172.17.0.6
+web1 ansible_host=192.168.11.111
+web2 ansible_host=192.168.11.201
+
+[dbservers]
+db1 ansible_host=192.168.11.112
+db2 ansible_host=192.168.11.202
