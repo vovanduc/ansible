@@ -40,6 +40,9 @@
           - php7.3-intl
           - php7.3-json
           - php7.3-mbstring
+          - php7.3-gd
+          - php7.3-xsl
+          - php7.3-mysql
 
         state: present
         autoclean: yes
@@ -93,14 +96,14 @@
         state: file
       tags: composer
     
-    - name: Composer install project
-      composer:
-        command: install
-        working_dir: /var/www/vinacis_resellers
+    #- name: Composer install project
+      #composer:
+        #command: install
+        #working_dir: /var/www/vinacis_resellers
     
     - command: chdir=/var/www/vinacis_resellers {{ item }}
       with_items:
-      - cp .env.example .env
+      #- cp .env_copy .env
       - php artisan cache:clear
       - chmod -R 777 storage
       - php artisan key:generate
